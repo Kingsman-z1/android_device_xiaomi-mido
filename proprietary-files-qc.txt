@@ -378,7 +378,19 @@ vendor/lib/libqti-util.so|293284848723e0065f1097d363cd76772a795b8c
 vendor/lib/vendor.qti.hardware.perf@1.0.so|13eb868906a7f9fa328d272488201141c64a79bd
 vendor/lib/vendor.qti.hardware.perf@2.0.so|592ca48b30ac1b8c42b21710bd6a41ebaa99e15f
 
-# Peripheral manager - from Tissot PKQ1.180917.001.V10.0.11.0.PDHMIXM
+# Perf - from Tissot PKQ1.180917.001/V10.0.10.0.PDHMIXM
+lib64/vendor.qti.hardware.iop@1.0.so
+lib64/vendor.qti.hardware.iop@2.0.so
+vendor/lib/hw/vendor.qti.hardware.iop@2.0-impl.so
+vendor/lib/libqti-iopd-client.so
+vendor/lib/vendor.qti.hardware.iop@1.0.so
+vendor/lib/vendor.qti.hardware.iop@2.0.so
+vendor/lib64/hw/vendor.qti.hardware.iop@2.0-impl.so
+vendor/lib64/libqti-iopd-client.so
+vendor/lib64/vendor.qti.hardware.iop@1.0.so
+vendor/lib64/vendor.qti.hardware.iop@2.0.so
+
+# Peripheral manager - from Tissot PKQ1.180917.001/V10.0.10.0.PDHMIXM
 vendor/bin/pm-proxy|56e9bdaa39270aa4456c9995a8a9e4618ba616a6
 vendor/bin/pm-service|7cbca1671529a805177f11f3f72defdbbe48a61c
 vendor/lib/libperipheral_client.so|6e06ff7e89cb8054612c98c25240e7570c069752
@@ -435,7 +447,24 @@ vendor/lib64/libqmi_csi.so|5e3d7a6c18f10c30d152bd87cd24b0c787f6ded3
 vendor/lib64/libqmi_encdec.so|68fb631317150d66fd1a39c48f8ef9e0405bbdf2
 vendor/lib64/libqmiservices.so|842a1b61fad7dd34753e945ee2ada0fdc9589c09
 
-# Radio - from Tissot PKQ1.180917.001.V10.0.11.0.PDHMIXM
+# QTI Performance libs
+-framework/QPerformance.jar
+-framework/UxPerformance.jar
+bin/perfservice
+etc/init/perfservice.rc
+etc/perf/whitelistedapps.xml
+lib/libqti-at.so
+lib/libqti-perfd-client_system.so
+lib/libqti-iopd-client_system.so
+lib/libqti-util_system.so
+lib/libqti_performance.so
+lib64/libqti-at.so
+lib64/libqti-perfd-client_system.so
+lib64/libqti-iopd-client_system.so
+lib64/libqti-util_system.so
+lib64/libqti_performance.so
+
+# Radio - from Tissot PKQ1.180917.001/V10.0.10.0.PDHMIXM
 product/etc/permissions/telephony_product_privapp-permissions-qti.xml|0536410f98ef3be8ca7630ba8e9383e41e423ceb
 -app/QtiTelephonyService/QtiTelephonyService.apk|420b39e20a5166940c1e2e55e8d9c92ec910cebb
 etc/permissions/qcrilhook.xml|9fc58a3d54d20ac1d53bab14608815121aefbce5
