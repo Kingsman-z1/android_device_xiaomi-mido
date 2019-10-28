@@ -68,6 +68,18 @@ persist.vendor.cne.feature=1
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.debug.coresight.config=stm-events
 
+# Dalvik
+PRODUCT_PROPERTY_OVERRIDES += \
+dalvik.vm.dex2oat-filter=speed \
+dalvik.vm.image-dex2oat-filter=speed \
+dalvik.vm.heapstartsize=16m \
+dalvik.vm.heapgrowthlimit=256m \
+dalvik.vm.heapsize=512m \
+dalvik.vm.heaptargetutilization=0.75 \
+dalvik.vm.heapminfree=4m \
+dalvik.vm.heapmaxfree=8m \
+ro.sys.fw.dex2oat_thread_count=8
+
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
 debug.egl.hw=0 \
@@ -174,6 +186,7 @@ persist.radio.multisim.config=dsds \
 persist.vendor.radio.apm_sim_not_pwdn=1 \
 persist.vendor.radio.custom_ecc=1 \
 persist.vendor.radio.hw_mbn_update=0 \
+persist.vendor.radio.jbims=1 \
 persist.vendor.radio.rat_on=combine \
 persist.vendor.radio.sib16_support=1 \
 persist.vendor.radio.aosp_usr_pref_sel=true \
@@ -198,7 +211,8 @@ debug.sf.early_gl_app_phase_offset_ns=15000000
 
 # Time Services
 PRODUCT_PROPERTY_OVERRIDES += \
-persist.vendor.delta_time.enable=true
+persist.vendor.delta_time.enable=true \
+persist.timed.enable=true
 
 # Tcp
 PRODUCT_PROPERTY_OVERRIDES += \
