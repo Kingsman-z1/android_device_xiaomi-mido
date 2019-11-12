@@ -102,6 +102,7 @@ ro.surface_flinger.set_idle_timer_ms=9000
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
 drm.service.enabled=true
+media.stagefright.thumbnail.prefer_hw_codecs=true
 
 # Fingerprint
 PRODUCT_PROPERTY_OVERRIDES += \
