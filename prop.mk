@@ -188,13 +188,13 @@ service.qti.ims.enabled=1
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 ro.surface_flinger.protected_contents=true
 
-PRODUCT_PROPERTY_OVERRIDES += \
+#PRODUCT_PROPERTY_OVERRIDES += \
 debug.sf.enable_gl_backpressure=1 \
 debug.sf.early_phase_offset_ns=500000 \
 debug.sf.early_app_phase_offset_ns=500000 \
 debug.sf.early_gl_phase_offset_ns=3000000 \
 debug.sf.early_gl_app_phase_offset_ns=15000000
-    
+
 # Time Services
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.vendor.delta_time.enable=true
@@ -220,3 +220,20 @@ persist.sys.wfd.virtual=0
 PRODUCT_PROPERTY_OVERRIDES += \
    persist.dbg.volte_avail_ovr=1 \
    persist.dbg.vt_avail_ovr=1
+
+# Codec2 switch
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.media.codec2=2
+
+#framework boost
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.at_library=true \
+    vendor.iop.enable_uxe=1 \
+    vendor.perf.iop_v3.enable=true \
+    vendor.perf.iop_v3.enable.debug=false \
+    vendor.enable.prefetch=false \
+    vendor.iop.enable_prefetch_ofr=false \
+    vendor.perf.gestureflingboost.enable=true \
+    vendor.perf.workloadclassifier.enable=true
+
+
