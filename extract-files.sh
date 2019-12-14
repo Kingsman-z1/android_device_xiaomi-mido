@@ -88,4 +88,7 @@ if [ -s "$MY_DIR"/proprietary-files.txt ]; then
         ;;
 fi
 
+patchelf --set-soname "vulkan.msm8996.so" "$DEVICE_BLOB_ROOT"/vendor/lib/hw/vulkan.msm8996.so
+patchelf --set-soname "vulkan.msm8996.so" "$DEVICE_BLOB_ROOT"/vendor/lib64/hw/vulkan.msm8996.so
+
 "$MY_DIR"/setup-makefiles.sh
