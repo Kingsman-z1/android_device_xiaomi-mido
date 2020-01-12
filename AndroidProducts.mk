@@ -17,4 +17,6 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aosp_mido.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_mido-userdebug
+    aosp_mido-user \
+    aosp_mido-userdebug \
+    aosp_mido-eng
